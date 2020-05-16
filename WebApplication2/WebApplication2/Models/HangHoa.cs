@@ -9,5 +9,11 @@ namespace WebApplication2.Models
     {
         public double DonGia { get; set; }
         public string  TenHangHoa { get; set; }
+
+        public override string ToString()
+        {
+            //return base.ToString();
+            return $"{TenHangHoa} - {DonGia.ToString()} đ";
+        }
     }
 }

@@ -39,5 +39,10 @@ namespace WebApplication2.Controllers
 
             return View(danhsach);
         }
+
+        public IActionResult DemoHinhHoc()
+        {
+            return View();
+        }
     }
 }
