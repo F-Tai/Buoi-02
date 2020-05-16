@@ -4,30 +4,45 @@
     ViewData["Title"] = "DemoHinhHoc";
 }
 @{
-    HinhChuNhat hcn = new HinhChuNhat
+    //HinhChuNhat hcn = new HinhChuNhat
+    //{
+    //    ChieuDai = 4,
+    //    ChieuRong = 6
+    //};
+    //hcn.TinhDienTichChuVi();
+    //
+    List<HinhHoc> dsHinh = new List<HinhHoc>();
+    dsHinh.Add(new HinhChuNhat
     {
-        ChieuDai = 4,
-        ChieuRong = 6
-    };
-    hcn.TinhDienTichChuVi();
+        ChieuDai = 2,
+        ChieuRong = 1
+    });
+    dsHinh.Add(new HinhTron
+    {
+        BanKinh = 12
+    });
  }
 <h1>DemoHinhHoc</h1>
-
+@foreach (var hh in dsHinh)
+{
+    hh.TinhDienTichChuVi();
+    @hh;
+}
 <div>
     <h4>HinhHoc</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ChuVi)
+            @*@Html.DisplayNameFor(model => model.ChuVi)*@
         </dt>
         <dd class = "col-sm-10">
-            @hcn.ChuVi
+            @*@hcn.ChuVi*@
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DienTich)
+            @*@Html.DisplayNameFor(model => model.DienTich)*@
         </dt>
         <dd class = "col-sm-10">
-            @hcn.DienTich
+            @*@hcn.DienTich*@
         </dd>
     </dl>
 </div>

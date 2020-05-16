@@ -7,6 +7,10 @@ namespace WebApplication2.Models
 {
     public class HinhHoc
     {
+        public static String RandomKey() 
+        {
+            return $"NN - {new Random().Next()}";
+        }
         public double ChuVi { get; set; }
         public double DienTich { get; set; }
 
