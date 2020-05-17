@@ -25,6 +25,7 @@ namespace WebApplication2.Models
 
     public class HinhChuNhat : HinhHoc
     {
+
         public int  ChieuDai { get; set; }
         public int ChieuRong { get; set; }
 
